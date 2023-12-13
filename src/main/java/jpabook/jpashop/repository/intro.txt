@@ -1,0 +1,5 @@
+@Repository 을 붙여서 자동으로 스프링 빈으로 관리가 되게 함
+
+
+@PersistenceContext를 클래스 안에 선언함으로서
+jpa의 entity managar을 선언 -> 스프링이 entity manager를 만들어서 주입(인젝션) 해줌.

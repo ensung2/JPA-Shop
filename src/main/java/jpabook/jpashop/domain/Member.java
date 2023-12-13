@@ -17,7 +17,7 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
-    private String Name;
+    private String name;
 
     @Embedded   // 내장객체를 포함했다고 표현
     private Address address;
