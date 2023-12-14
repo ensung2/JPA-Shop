@@ -16,7 +16,7 @@ public class ItemRepository {
 
     // 상품저장
     public void save(Item item) {
-        if (item.getId() == null) {     // 아이디 값이 없다면? 새로 생기는 객체라는 뜻!
+        if (item.getId() == null) {     // db에 아이디 값이 없다면? 새로 생기는 객체라는 뜻!
             em.persist(item);
         }else {
             em.merge(item);             // 업데이트의 개념
